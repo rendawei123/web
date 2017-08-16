@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mouse_move</title>
+    <style media="screen">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        var mouse_x=0;
+        var mouse_y=0;
+
+        // 首先定义给鼠标按下绑定事件
+        $('.box').mousedown(function(e) {
+
+            // 去的鼠标按下时的鼠标坐标
+            mouse_x=e.clientX;
+            mouse_y=e.clientY;
+
+            // 取得鼠标按下时的盒子坐标
+            var $box_top=$(this).offset().top;
+            var $box_left=$(this).offset().left;
+
+            // 给鼠标移动绑定事件，注意，鼠标移动在鼠标按下里面，因为现有鼠标按下，再有鼠标移动
+            $(document).mousemove(function (e) {
+
+                // 取得鼠标移动后的新坐标
+                var new_mouse_x=e.clientX
+                var new_mouse_y=e.clientY
+
+                // 盒子移动到新的坐标
+                $('.box').offset({
+
+                    left:new_mouse_x-mouse_x+$box_left,
+                    top:new_mouse_y-mouse_y+$box_top
+                })
+            })
+            // 鼠标松开时取消事件
+            $(document).mouseup(function() {
+                $(document).off()
+            })
+        })
+
+    </script>
+</body>
+</html>

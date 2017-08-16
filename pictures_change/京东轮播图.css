@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 590px;
+    height: 340px;
+    margin: 100px auto;
+    background-color: #9D9D9D;
+    position: relative;
+}
+.box:hover .btn{
+    display: inline-block;
+}
+
+.photos li{
+    list-style: none;
+    position: absolute;
+    /*display: none;*/
+}
+
+.buttoms{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left:210px;
+}
+
+.buttoms li{
+    list-style: none;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    text-align: center;
+    margin-right: 4px;
+}
+.hide{
+    display: none;
+}
+
+/*注意，直接不能用.red,会找不到*/
+.buttoms .red{
+    background-color: red;
+}
+
+.btn{
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 165px;
+    font-size: x-large;
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    opacity: 0.5;
+    display: none;
+}
+.right{
+    position: absolute;
+    right: 0;
+}

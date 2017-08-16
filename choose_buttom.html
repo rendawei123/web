@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button class="selectall">全选</button>
+    <button class="recerse">反选</button>
+    <button class="cancle">取消</button>
+    <hr>
+    <table border="1px">
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $('.selectall').click(function(){
+            $(':checkbox').prop('checked',true);
+        })
+        $('.cancle').click(function(){
+            $(':checkbox').prop('checked',false);
+        })
+        $('.recerse').click(function(){
+            $(':checkbox').each(function(){
+                $(this).prop('checked',!$(this).prop('checked'))
+            })
+        })
+
+    </script>
+</body>
+</html>
