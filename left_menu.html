@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LeftMenu</title>
+    <style media="screen">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .left{
+            height: 600px;
+            width: 20%;
+            display: inline-block;
+            background-color: 	#ADADAD;
+        }
+        .buttom{
+            height: 50px;
+            background-color: 	#46A3FF;
+            text-align: center;
+            line-height: 50px;
+            font-size: x-large;
+            border: 2px #BEBEBE solid;
+        }
+        .buttom:hover{
+            background-color: #00E3E3;
+        }
+        .text{
+            height: 100px;
+            text-align: center;
+            font-size: xx-large;
+            line-height: 100px;
+            background-color: 	#79FF79;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="l1 buttom">1</div>
+        <div class="text">111</div>
+        <div class="l2 buttom">2</div>
+        <div class="text">222</div>
+        <div class="l3 buttom">3</div>
+        <div class="text">333</div>
+    </div>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $('.buttom').click(function() {
+            $('.text').hide()
+            $(this).next().show()
+        })
+    </script>
+</body>
+</html>
