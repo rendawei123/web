@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品切换</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        .top{
+            background-color: lightgray;
+            height: 50px;
+        }
+        .top div{
+            display: inline-block;
+            line-height: 50px;
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .add{
+            line-height: 50px;
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            float: right;
+            background-color: red;
+        }
+        .active{
+            color: white;
+            background-color: red;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="top">
+    <div class="d1 active">商品介绍</div>
+    <div>规格</div>
+    <div>售后</div>
+    <div>评价</div>
+
+    <!-- <div class="add">加入购物车</div> -->
+    <span class="add">加入购物车</span>
+</div>
+
+<div class="content">
+    <div>商品介绍</div>
+    <div class="hide">价格</div>
+    <div class="hide">售后</div>
+    <div class="hide">评价</div>
+</div>
+
+<script src="jquery-3.2.1.js"></script>
+<script>
+
+    $(".top div").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        $(this).parent().next().children().eq($(this).index()).show().siblings().hide()
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>进度条</title>
+    <style>
+        #bar {
+            width: 200px;
+            height: 20px;
+        }
+        #bar div {
+            width: 0px;
+            height: 19px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bar">
+        <div></div>
+    </div>
+
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    function set(progress) {
+        if (progress) {
+            $("#bar div").css("width", String(progress) + "%");
+        }
+    }
+    var i = 0;
+    function doo() {
+        if (i <= 100) {
+            setTimeout("doo()", 100);
+            set(i);
+            i++;
+        }
+    }
+    doo();
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>select_move</title>
+    <style media="screen">
+        .box{
+            display: inline-block;
+            width: 500px;
+            height: 200px;
+            background-color: #D3A4FF;
+        }
+        .box .inner{
+            float: left;
+        }
+        .lib{
+            width: 200px;
+            height: 200px;
+            background-color: #B87070;
+        }
+        .mid{
+            width: 100px;
+            height: 200px;
+            background-color: #FFE4CA;
+        }
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left lib inner">
+            <ul>
+                <li>三国演义</li>
+                <li>追风筝的人</li>
+                <li>射雕英雄传</li>
+                <li>白鹿原</li>
+                <li>小王子</li>
+            </ul>
+        </div>
+        <div class="mid inner">
+             <div class="one move">
+                 >
+             </div>
+             <div class="all move">
+                 >>
+             </div>
+         </div>
+        <div class="right lib inner">
+            <ul></ul>
+        </div>
+    </div>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $('.left li').click(function () {
+            $(this).css({'color':'#A8FF24'})
+            var one_ele=$(this)
+            $('.one').click(function () {
+                $('.right ul').append(one_ele)
+            })
+
+        })
+        $('.all').click(function () {
+            $('.left li').each(function () {
+                $('.right ul').append($(this))
+            })
+        })
+    </script>
+</body>
+</html>
