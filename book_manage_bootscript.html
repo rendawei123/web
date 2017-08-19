@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图书馆</title>
+</head>
+
+<body>
+    <!-- 标题栏开始 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top m">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">图书管理系统</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active r"><a href="#">登录<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="r">关注</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">系统信息</a></li>
+                            <li><a href="#">关注的人</a></li>
+                            <li><a href="#">邮箱</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索书店</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">退出</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的的书架 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">武侠</a></li>
+                            <li><a href="#">动漫</a></li>
+                            <li><a href="#">小黄书</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </nav>
+    <!-- 标题栏结束 -->
+    <div id="empty"></div>
+
+    <div class="container-fulid">
+        <div class="row">
+
+            <!-- 左侧菜单开始 -->
+            <div class="col-md-2">
+
+                <div class="panel panel-default m1">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false" aria-controls="collapseListGroup1"><font><font class="">
+                            阅读记录
+                          </font></font>
+                          </a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="false" style="height: 0px;">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <font>
+                                    <font>Bootply</font>
+                                </font>
+                            </li>
+                            <li class="list-group-item">
+                                <font>
+                                    <font>一个itmus交流facilin</font>
+                                </font>
+                            </li>
+                            <li class="list-group-item">
+                                <font>
+                                    <font>第二性爱</font>
+                                </font>
+                            </li>
+                        </ul>
+                        <div class="panel-footer">
+                            <font>
+                                <font>页脚</font>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default m1">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading3">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup3" aria-expanded="false" aria-controls="collapseListGroup3"><font><font class="">
+                            书签
+                          </font></font>
+                          </a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading3" aria-expanded="false" style="height: 0px;">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <font>
+                                    <font>Bootply</font>
+                                </font>
+                            </li>
+                            <li class="list-group-item">
+                                <font>
+                                    <font>一个itmus交流facilin</font>
+                                </font>
+                            </li>
+                            <li class="list-group-item">
+                                <font>
+                                    <font>第二性爱</font>
+                                </font>
+                            </li>
+                        </ul>
+                        <div class="panel-footer">
+                            <font>
+                                <font>页脚</font>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default m1">
+                    <div class="panel-heading" role="tab" id="collapseListGroupHeading2">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup2" aria-expanded="false" aria-controls="collapseListGroup2"><font><font class="">
+                            读书笔记及感悟
+                          </font></font>
+                          </a>
+                        </h4>
+                    </div>
+                    <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2" aria-expanded="false" style="height: 0px;">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <font>
+                                    <font>Bootply</font>
+                                </font>
+                            </li>
+                            <li class="list-group-item">
+                                <font>
+                                    <font>一个itmus交流facilin</font>
+                                </font>
+                            </li>
+                            <li class="list-group-item">
+                                <font>
+                                    <font>第二性爱</font>
+                                </font>
+                            </li>
+                        </ul>
+                        <div class="panel-footer">
+                            <font>
+                                <font>页脚</font>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 左侧菜单结束 -->
+
+            <div class="col-md-9" id="r1">
+
+                <!-- 操作栏开始 -->
+                <div>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">找书</button>
+
+                    </form>
+                    <button type="button" class="btn btn-default navbar-btn r" id="add">添加新书</button>
+                </div>
+                <!-- 操作栏结束 -->
+
+
+                <!-- 表格开始 -->
+                <table class="table table-hover" id="lib">
+                    <tr>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>出版日期</th>
+                        <th>价格</th>
+                        <th>操作</th>
+                    </tr>
+                </table>
+                <!-- 表格结束 -->
+
+                <!-- 分页开始 -->
+                <div class="ps">
+                    <nav aria-label="Page navigation" class="">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- 分页结束 -->
+            </div>
+        </div>
+    </div>
+    <!-- 模态对话框开始 -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">请输入书籍信息</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="t form-control m" placeholder="书名">
+                    <input type="text" class="t form-control m" placeholder="作者">
+                    <input type="text" class="t form-control m" placeholder="出版日期">
+                    <input type="text" class="t form-control m" placeholder="价格">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="yes">Add </button>
+                    <button type="button" class="btn btn-primary" id="save">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态对话框结束 -->
+
+
+
+
+    <script src="jquery-3.2.1.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style media="screen">
+        .p {
+            padding-left: 0;
+        }
+        .ps{
+            float: right;
+            /*margin-bottom: 0;*/
+            position: absolute;
+            bottom: 10px;
+            right: 100px;
+        }
+
+        .m {
+            margin-bottom: 0;
+        }
+        .m1{
+            margin-bottom: 0;
+        }
+
+        .r {
+            float: right;
+        }
+        .panel-default>.panel-heading{
+            background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+            color: #BEBEBE;
+        }
+        .panel-heading{
+            border-left: none;
+        }
+
+
+        #empty {
+            height: 60px;
+        }
+        #r1{
+            height: 500px;
+            /*background: black;*/
+            border: 1px black solid;
+            margin-top: 2px;
+            position: relative;
+
+        }
+
+    </style>
+    <script>
+        $('#add').click(function() {
+            $('#myModal').modal('show')
+            $('#save').hide()
+
+        })
+        $('#yes').click(function() {
+            var v = []
+            $('.t').each(function() {
+                v.push($(this).val())
+                $(this).val('')
+            })
+
+            $('#myModal').modal('hide')
+            var $new_line = $('<tr>')
+            $.each(v, function(x, y) {
+                var $new_ele = $('<td>')
+                $new_ele.text(y)
+                $new_line.append($new_ele)
+            })
+            var $add_modify = $('<td>')
+            var $add_del = $('<td>')
+            $add_modify.text('修改')
+            $add_modify.addClass('modify btn btn-success')
+            $add_del.text('删除')
+            $add_del.addClass('del btn btn-danger')
+            $new_line.append($add_modify).append($add_del)
+            $('#lib').append($new_line)
+        })
+
+
+        $('#lib').on('click', '.del', function() {
+            $(this).parent().remove()
+        })
+
+        var m
+        $('#lib').on('click', '.modify', function() {
+            $('#myModal').modal('show')
+            $('#save').show()
+            $('#yes').hide()
+            m = $(this).siblings()
+        })
+
+
+        $('#save').click(function() {
+            var v1 = []
+            $('.t').each(function() {
+                v1.push($(this).val())
+                $(this).val('')
+            })
+            $('#myModal').modal('hide')
+            $.each(v1, function(x, y) {
+                m.eq(x).text(y)
+            })
+        })
+    </script>
+</body>
+
+</html>
